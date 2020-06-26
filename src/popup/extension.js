@@ -1,6 +1,6 @@
 import Vue from 'vue'
-import App from './App'
-//import Extension from './Extension'
+import Extension from './Extension'
+
 
 
 global.browser = require('webextension-polyfill')
@@ -11,6 +11,5 @@ new Vue({
   el: '#app',
   
   
-  render: h => h(App)
-  //render: h => h(Extension)
+  render: h => h(Extension)
 })
