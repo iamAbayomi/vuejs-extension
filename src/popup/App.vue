@@ -6,7 +6,7 @@
             <p class="section-text"></p>
             <!-- Begining of Contact form -->
             <div class="extension-form">
-              <img class="header-logo" src="/src/images/spiinge-logo.png">
+              <img class="header-logo" src="images/spiinge-logo.png">
               <div class="bottom-line"></div>
               <p class="section-description">Add the Webpages you want to Save</p>
                 <form class="form">
