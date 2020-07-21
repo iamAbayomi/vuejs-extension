@@ -12,6 +12,7 @@
                 <form class="form">
                     <label for="name-label" class="name-label" >Categories</label>
                     <input 
+                            v-model="webpages"
                             type="name"
                             class="name-text"
                             placeholder=" "
@@ -19,7 +20,7 @@
                     >
                     <label for="name-label" class="name-label">Webpages</label>
                     <input 
-                            
+                            v-model="websites"
                             type="text"
                             class="name-text"
                             placeholder=" "
@@ -44,13 +45,27 @@
 export default {
     data(){
         return{
-            categories: '',
-            websites: ''
+            webpages: 'Webpages',
+            websites: 'Fola is here'
         }
     },
     methods: {
         submit: function(){
-            axios.post('/endpoints',{})
+            axios.post('/endpoints/webpages',{
+                
+            }).then( response => {
+            
+            }).catch((error) =>{
+
+            })
+            
+            axios.post('/endpoints/websites',{
+
+            }).then( response =>{
+
+            }).catch((error)=>{
+
+            }) 
         }
     }
 }
