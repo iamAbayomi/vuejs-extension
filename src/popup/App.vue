@@ -11,13 +11,16 @@
               <p class="section-description">Add the Webpages you want to Save</p>
                 <form class="form">
                     <label for="name-label" class="name-label" >Categories</label>
-                    <input type="name"
+                    <input 
+                            type="name"
                             class="name-text"
                             placeholder=" "
                             required
                     >
                     <label for="name-label" class="name-label">Webpages</label>
-                    <input type="text"
+                    <input 
+                            
+                            type="text"
                             class="name-text"
                             placeholder=" "
                             required
@@ -39,7 +42,17 @@
 
 <script>
 export default {
-    
+    data(){
+        return{
+            categories: '',
+            websites: ''
+        }
+    },
+    methods: {
+        submit: function(){
+            axios.post('/endpoints',{})
+        }
+    }
 }
 </script>
 
