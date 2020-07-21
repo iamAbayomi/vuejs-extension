@@ -9,7 +9,7 @@
               <img class="header-logo" src="../images/spiinge-logo.png">
               <div class="bottom-line"></div>
               <p class="section-description">Add the Webpages you want to Save</p>
-                <form class="form">
+                <form class="form" @submit.prevent>
                     <label for="name-label" class="name-label" >Categories</label>
                     <input 
                             v-model="webpages"
@@ -26,9 +26,15 @@
                             placeholder=" "
                             required
                     >
-                    <p class="small-text+">Webpages saved appear in categories</p>
+                    <p class="small-text">Webpages saved appear in categories</p>
                     <!--Submit Button-->
-                    <input type="submit" value="Save" class="blue-button">
+                    <button type="submit" 
+                            value="Save" 
+                            class="blue-button"
+                            @click="saveWebsites"
+                            >
+                         Save
+                    </button>
                 </form>
               <div class="bottom-line"></div>
 
@@ -50,11 +56,13 @@ export default {
         }
     },
     methods: {
-        submit: function(){
+        saveWebsites: function(){
+            
+            this.webpages = 'Webpages is here'
+            this.websites = 'Fola is not here'
             axios.post('/endpoints/webpages',{
                 
             }).then( response => {
-            
             }).catch((error) =>{
 
             })
