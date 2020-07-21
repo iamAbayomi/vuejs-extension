@@ -48,7 +48,7 @@ const config = {
         loader: 'file-loader',
         options: {
           name: '[path][name].[ext]',
-          outputPath: '/images/',
+          outputPath: '/',
           emitFile: true,
           esModule: false,
         },
@@ -81,7 +81,7 @@ const config = {
     }),
     new CopyPlugin([
       { from: 'icons', to: 'icons', ignore: ['icon.xcf'] },
-      { from: 'images', to: 'images', ignore: ['icon.xcf'] },
+    //  { from: 'images', to: 'images', ignore: ['icon.xcf'] },
       { from: 'popup/popup.html', to: 'popup/popup.html', transform: transformHtml },
       {
         from: 'manifest.json',
