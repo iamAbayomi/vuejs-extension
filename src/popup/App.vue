@@ -57,6 +57,7 @@ export default {
     },
     methods: {
         saveWebsites: function(){
+            this.logMessage('Here')
             
             this.webpages = 'Webpages is here'
             this.websites = 'Fola is not here'
