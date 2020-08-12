@@ -61,19 +61,23 @@ export default {
             this.webpages = 'Webpages is here'
             this.websites = 'Fola is not here'
             axios.post('/endpoints/webpages',{
-                
+                webpages: this.webpages
             }).then( response => {
+                this.logMessage(response)
             }).catch((error) =>{
-
+                this.logMessage(error)
             })
             
             axios.post('/endpoints/websites',{
-
+                websites: this.websites
             }).then( response =>{
-
+                this.logMessage(response)
             }).catch((error)=>{
-
+                this.logMessage(error)
             }) 
+        },
+        logMessage(message){
+            chrome.extension.getBackgroundPage().console.log(message)
         }
     }
 }
