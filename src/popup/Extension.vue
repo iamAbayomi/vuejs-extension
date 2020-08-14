@@ -19,7 +19,7 @@ export default {
   },
   methods: {
     buttonSearch() {
-      	window.open("https://www.mynotepaper.com/?s=" + this.keyword);
+      window.open("https://www.mynotepaper.com/?s=" + this.keyword);
     }
   }
 };
