@@ -1,8 +1,9 @@
 <template>
   <div class="container">
     <div class="extension-form">
+
       <div class="form">
-        <img class="header-logo" src="~/assets/spiinge-logo.png">
+        <img class="header-logo" src="../images/spiinge-logo.png">
         <div class="bottom-line" />
         <!--Submit Button-->
         <button
@@ -35,6 +36,7 @@
 .extension-form{
     margin: auto;
     max-width: 300px;
+    width: 300px;
     margin-bottom: 10px ;
     background-color: white;
     /* Add shadows to create the "card" effect */
