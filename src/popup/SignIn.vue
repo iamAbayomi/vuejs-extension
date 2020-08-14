@@ -8,14 +8,16 @@
         >
         <div class="bottom-line" />
         <!--Submit Button-->
-        <button
-          type="submit"
-          value="Save"
-          class="blue-button"
-          @click="saveWebsites"
-        >
-          Sign In
-        </button>
+        <router-link to="/"> 
+          <button
+            type="submit"
+            value="Save"
+            class="blue-button"
+            @click="saveWebsites"
+          >
+            Sign In
+          </button>
+        </router-link>
         <p class="section-description">
           Sign in to use Spiinge
         </p>
