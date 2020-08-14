@@ -1,9 +1,11 @@
 <template>
   <div class="container">
     <div class="extension-form">
-
       <div class="form">
-        <img class="header-logo" src="../images/spiinge-logo.png">
+        <img
+          class="header-logo"
+          src="../images/spiinge-logo.png"
+        >
         <div class="bottom-line" />
         <!--Submit Button-->
         <button

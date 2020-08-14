@@ -1,50 +1,68 @@
 <template>
-    <section class="contact-section">
-        <!--Begining of Flex Container -->
-        <div class="section-container">
-            <!-- Heading Section -->
-            <p class="section-text"></p>
-            <!-- Begining of Contact form -->
-            <div class="extension-form">
-              <img class="header-logo" src="../images/spiinge-logo.png">
-              <div class="bottom-line"></div>
-              <p class="section-description">Add the Webpages you want to Save</p>
-                <form class="form" @submit.prevent>
-                    <label for="name-label" class="name-label" >Categories</label>
-                    <input 
-                            v-model="webpages"
-                            type="name"
-                            class="name-text"
-                            placeholder=" "
-                            required
-                    >
-                    <label for="name-label" class="name-label">Webpages</label>
-                    <input 
-                            v-model="websites"
-                            type="text"
-                            class="name-text"
-                            placeholder=" "
-                            required
-                    >
-                    <p class="small-text">Webpages saved appear in categories</p>
-                    <!--Submit Button-->
-                    <button type="submit" 
-                            value="Save" 
-                            class="blue-button"
-                            @click="saveWebsites"
-                            >
-                         Save
-                    </button>
-                </form>
-              <div class="bottom-line"></div>
+  <section class="contact-section">
+    <!--Begining of Flex Container -->
+    <div class="section-container">
+      <!-- Heading Section -->
+      <p class="section-text" />
+      <!-- Begining of Contact form -->
+      <div class="extension-form">
+        <img
+          class="header-logo"
+          src="../images/spiinge-logo.png"
+        >
+        <div class="bottom-line" />
+        <p class="section-description">
+          Add the Webpages you want to Save
+        </p>
+        <form
+          class="form"
+          @submit.prevent
+        >
+          <label
+            for="name-label"
+            class="name-label"
+          >Categories</label>
+          <input 
+            v-model="webpages"
+            type="name"
+            class="name-text"
+            placeholder=" "
+            required
+          >
+          <label
+            for="name-label"
+            class="name-label"
+          >Webpages</label>
+          <input 
+            v-model="websites"
+            type="text"
+            class="name-text"
+            placeholder=" "
+            required
+          >
+          <p class="small-text">
+            Webpages saved appear in categories
+          </p>
+          <!--Submit Button-->
+          <button
+            type="submit" 
+            value="Save" 
+            class="blue-button"
+            @click="saveWebsites"
+          >
+            Save
+          </button>
+        </form>
+        <div class="bottom-line" />
 
-                <div class="bottom-text">Home</div>
-            </div>
-            <!-- End of Contact form -->
+        <div class="bottom-text">
+          Home
         </div>
-        <!-- End of flex Container -->
-    </section>
-    
+      </div>
+      <!-- End of Contact form -->
+    </div>
+    <!-- End of flex Container -->
+  </section>
 </template>
 
 <script>
@@ -56,7 +74,7 @@ export default {
         }
     },
     methods: {
-        saveWebsites: function(){
+      saveWebsites: function(){
             this.logMessage('Here')
             
             this.webpages = 'Webpages is here'
