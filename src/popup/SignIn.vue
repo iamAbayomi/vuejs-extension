@@ -8,7 +8,10 @@
         >
         <div class="bottom-line" />
         <!--Submit Button-->
-        <router-link to="/"> 
+        <a
+          target="_blank"
+          href="localhost://3000"
+        > 
           <button
             type="submit"
             value="Save"
@@ -17,7 +20,7 @@
           >
             Sign In
           </button>
-        </router-link>
+        </a>
         <p class="section-description">
           Sign in to use Spiinge
         </p>
