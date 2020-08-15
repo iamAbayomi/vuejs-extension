@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <p> Message Received {{ message }} </p>
+    <p> Messag Received {{ message }} </p>
     <p> Error {{ error }} </p>
     <button
       @click="receiveMessage"
@@ -19,6 +19,17 @@
 
 
 <script>
+console.log('This is the method')
+            chrome.runtime.onMessageExternal.addListener(
+                function(request, sender, sendResponse) {
+                 
+                        this.message = request.message
+                        this.error = request
+                 
+                       console.log('Inside the request and response method')
+                       sendResponse('hello')
+                } 
+            )
 export default {
     data(){
         return{
