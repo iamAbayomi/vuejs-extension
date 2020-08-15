@@ -1,6 +1,7 @@
 import Vue from 'vue'
 // import App from './App'
-import App from './SignIn'
+// import App from './SignIn'
+import App from './test'
 //import Extension from './Extension'
 
 

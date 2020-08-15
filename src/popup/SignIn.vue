@@ -10,13 +10,12 @@
         <!--Submit Button-->
         <a
           target="_blank"
-          href="localhost://3000"
+          href="http://localhost:3000"
         > 
           <button
             type="submit"
-            value="Save"
+            value="Sign In"
             class="blue-button"
-            @click="saveWebsites"
           >
             Sign In
           </button>
