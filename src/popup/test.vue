@@ -2,7 +2,7 @@
   <div class="container">
     <p> Message Received {{ message }} </p>
     <p> Error {{ error }} </p>
-  </div>
+  </div> 
 </template>
 
 <style scoped>
