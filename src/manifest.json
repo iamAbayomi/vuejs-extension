@@ -16,7 +16,7 @@
       "background.js"
     ]
   },"externally_connectable": {
-    "matches": ["*://*.localhost:3000/*"]
+    "matches": ["http://localhost/*"]
   }
   
 }
